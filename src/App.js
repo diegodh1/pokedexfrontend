@@ -295,17 +295,15 @@ function App() {
           id="mobile-nav"
           menuIcon={<Icon>menu</Icon>}
           options={{
-            draggable: true,
             edge: "left",
-            preventScrolling: true,
           }}
         >
-          <NavItem href="">
+          <NavItem>
             <img style={{ width: "13%" }} src={pokelogo} />
           </NavItem>
         </Navbar>
         {loading ? (
-          <img src={pokeball} alt="logo" />
+          <img src={pokeball} />
         ) : (
           <div>
             {prev ? (
